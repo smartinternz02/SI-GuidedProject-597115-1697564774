@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Prediction</title>
+</head>
+<body>
+    <h1>Mental Health Prediction</h1>
+    <form action="/out" method="post">
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age"><br><br>
+
+        <label for="Gender">Gender:</label>
+        <select id="Gender" name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="self_employed">Are you self-employed?</label>
+        <select id="self_employed" name="self_employed">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="family_history">Family history of mental health issues?</label>
+        <select id="family_history" name="family_history">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="work_interfere">Does work interfere with mental health?</label>
+        <select id="work_interfere" name="work_interfere">
+            <option value="Often">Often</option>
+            <option value="Rarely">Rarely</option>
+            <option value="Never">Never</option>
+            <option value="Sometimes">Sometimes</option>
+        </select><br><br>
+
+        <label for="no_employees">Number of employees in your company:</label>
+        <select id="no_employees" name="no_employees">
+            <option value="1-5">1-5</option>
+            <option value="6-25">6-25</option>
+            <option value="26-100">26-100</option>
+            <option value="100-500">100-500</option>
+            <option value="More than 500">More than 500</option>
+        </select><br><br>
+
+        <label for="remote_work">Is your work primarily remote?</label>
+        <select id="remote_work" name="remote_work">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="tech_company">Is it a tech company?</label>
+        <select id="tech_company" name="tech_company">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="benefits">Do you receive benefits?</label>
+        <select id="benefits" name="benefits">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="care_options">Do you have care options?</label>
+        <select id="care_options" name="care_options">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="wellness_program">Is there a wellness program?</label>
+        <select id="wellness_program" name="wellness_program">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="seek_help">Do you seek help for mental health issues?</label>
+        <select id="seek_help" name="seek_help">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="anonymity">Do you prefer anonymity?</label>
+        <select id="anonymity" name="anonymity">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br> <label for="leave">How flexible is your leave?</label>
+        <select id="leave" name="leave">
+            <option value="Somewhat easy">Somewhat easy</option>
+            <option value="Very easy">Very easy</option>
+            <option value="Somewhat difficult">Somewhat difficult</option>
+            <option value="Very difficult">Very difficult</option>
+            <option value="Don't know">Don't know</option>
+        </select><br><br>
+
+        <label for="mental_health_consequence">Does mental health affect work?</label>
+        <select id="mental_health_consequence" name="mental_health_consequence">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select><br><br>
+
+        <label for="phys_health_consequence">Does physical health affect work?</label>
+        <select id="phys_health_consequence" name="phys_health_consequence">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select><br><br>
+
+        <label for="coworkers">Would you discuss with coworkers?</label>
+        <select id="coworkers" name="coworkers">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Some of them">Some of them</option>
+        </select><br><br>
+
+        <label for="supervisor">Would you discuss with a supervisor?</label>
+        <select id="supervisor" name="supervisor">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Some of them">Some of them</option>
+        </select><br><br>
+
+        <label for="mental_health_interview">Would you discuss in a job interview?</label>
+        <select id="mental_health_interview" name="mental_health_interview">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select><br><br>
+
+        <label for="phys_health_interview">Would you discuss physical health in a job interview?</label>
+        <select id="phys_health_interview" name="phys_health_interview">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select><br><br>
+
+        <label for="mental_vs_physical">Do you think mental and physical health are equally important?</label>
+        <select id="mental_vs_physical" name="mental_vs_physical">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Don't know">Don't know</option>
+        </select><br><br>
+
+        <label for="obs_consequence">Do you think there could be any negative consequences?</label>
+        <select id="obs_consequence" name="obs_consequence">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

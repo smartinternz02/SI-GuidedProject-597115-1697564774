@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .output-message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+        }
+        .button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="output-message">
+            {% if y %}
+                {{ y }}
+            {% endif %}
+        </div>
+        <div class="button-group">
+            <a class="button" href="/">Home</a>
+            <a class="button" href="/pred">Predict</a>
+        </div>
+    </div>
+</body>
+</html>
